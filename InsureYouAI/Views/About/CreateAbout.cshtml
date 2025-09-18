@@ -1,0 +1,25 @@
+﻿@model About
+@{
+    ViewData["Title"] = "CreateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex align-items-center">
+            <h5 class="mb-0">Yeni Hakkımızda Bilgisi Ekle</h5>
+        </div>
+        <form method="post">
+            <label>Başlık</label>
+            <input type="text" asp-for="Title" class="form-control" />
+            <br />
+            <label>Görsel Url</label>
+            <input type="text" asp-for="ImageUrl" class="form-control" />
+            <br />
+            <label>Açıklama</label>
+            <textarea asp-for="Description" rows="5" class="form-control"> </textarea>
+            <br />
+            <button class="btn btn-primary">Kaydet</button>
+        </form>
+    </div>
+</div>
+
